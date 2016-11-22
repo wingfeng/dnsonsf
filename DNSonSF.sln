@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "DNSonSF", "DNSonSF\DNSonSF.sfproj", "{5FDCF438-A895-4D9C-99C5-838A1393C400}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainService", "DomainService\DomainService.csproj", "{252135C7-0D03-4F3F-9F5E-720EF52E2B91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainService.Interfaces", "DomainService.Interfaces\DomainService.Interfaces.csproj", "{DE133E8F-96E3-4630-9C1C-44A041DB565B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DnsService", "DnsService\DnsService.csproj", "{7C7EF5DF-481E-4AEE-8332-0B2C0A60F526}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FDCF438-A895-4D9C-99C5-838A1393C400}.Debug|x64.ActiveCfg = Debug|x64
+		{5FDCF438-A895-4D9C-99C5-838A1393C400}.Debug|x64.Build.0 = Debug|x64
+		{5FDCF438-A895-4D9C-99C5-838A1393C400}.Debug|x64.Deploy.0 = Debug|x64
+		{5FDCF438-A895-4D9C-99C5-838A1393C400}.Release|x64.ActiveCfg = Release|x64
+		{5FDCF438-A895-4D9C-99C5-838A1393C400}.Release|x64.Build.0 = Release|x64
+		{5FDCF438-A895-4D9C-99C5-838A1393C400}.Release|x64.Deploy.0 = Release|x64
+		{252135C7-0D03-4F3F-9F5E-720EF52E2B91}.Debug|x64.ActiveCfg = Debug|x64
+		{252135C7-0D03-4F3F-9F5E-720EF52E2B91}.Debug|x64.Build.0 = Debug|x64
+		{252135C7-0D03-4F3F-9F5E-720EF52E2B91}.Release|x64.ActiveCfg = Release|x64
+		{252135C7-0D03-4F3F-9F5E-720EF52E2B91}.Release|x64.Build.0 = Release|x64
+		{DE133E8F-96E3-4630-9C1C-44A041DB565B}.Debug|x64.ActiveCfg = Debug|x64
+		{DE133E8F-96E3-4630-9C1C-44A041DB565B}.Debug|x64.Build.0 = Debug|x64
+		{DE133E8F-96E3-4630-9C1C-44A041DB565B}.Release|x64.ActiveCfg = Release|x64
+		{DE133E8F-96E3-4630-9C1C-44A041DB565B}.Release|x64.Build.0 = Release|x64
+		{7C7EF5DF-481E-4AEE-8332-0B2C0A60F526}.Debug|x64.ActiveCfg = Debug|x64
+		{7C7EF5DF-481E-4AEE-8332-0B2C0A60F526}.Debug|x64.Build.0 = Debug|x64
+		{7C7EF5DF-481E-4AEE-8332-0B2C0A60F526}.Release|x64.ActiveCfg = Release|x64
+		{7C7EF5DF-481E-4AEE-8332-0B2C0A60F526}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
