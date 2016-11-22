@@ -7,6 +7,8 @@ using Microsoft.ServiceFabric.Actors;
 using Microsoft.ServiceFabric.Actors.Runtime;
 using Microsoft.ServiceFabric.Actors.Client;
 using DomainService.Interfaces;
+using ARSoft.Tools.Net;
+using ARSoft.Tools.Net.Dns;
 
 namespace DomainService
 {
@@ -19,7 +21,7 @@ namespace DomainService
     ///  - None: State is kept in memory only and not replicated.
     /// </remarks>
     [StatePersistence(StatePersistence.Persisted)]
-    internal class DomainService : Actor, IDomainService
+    internal class DomainService : Actor, IDomainActor
     {
         /// <summary>
         /// Initializes a new instance of DomainService
@@ -29,6 +31,11 @@ namespace DomainService
         public DomainService(ActorService actorService, ActorId actorId)
             : base(actorService, actorId)
         {
+        }
+
+        public Task<DnsMessage> Resolve(DomainName name, RecordType type, RecordClass recordClass)
+        {
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -47,25 +54,7 @@ namespace DomainService
             return this.StateManager.TryAddStateAsync("count", 0);
         }
 
-        /// <summary>
-        /// TODO: Replace with your own actor method.
-        /// </summary>
-        /// <returns></returns>
-        Task<int> IDomainService.GetCountAsync()
-        {
-            return this.StateManager.GetStateAsync<int>("count");
-        }
+      
 
-        /// <summary>
-        /// TODO: Replace with your own actor method.
-        /// </summary>
-        /// <param name="count"></param>
-        /// <returns></returns>
-        Task IDomainService.SetCountAsync(int count)
-        {
-            // Requests are not guaranteed to be processed in order nor at most once.
-            // The update function here verifies that the incoming count is greater than the current count to preserve order.
-            return this.StateManager.AddOrUpdateStateAsync("count", count, (key, value) => count > value ? count : value);
-        }
     }
 }
